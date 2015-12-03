@@ -23,6 +23,7 @@
 #include <linux/workqueue.h>
 #include <linux/msm-bus.h>
 #include <linux/msm-bus-board.h>
+#include <linux/pm_qos.h>
 #include <linux/kref.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-device.h>
@@ -292,6 +293,7 @@ struct msm_vidc_inst {
 	u32 buffers_held_in_driver;
 	atomic_t in_flush;
 	u32 pic_struct;
+	struct pm_qos_request pm_qos;
 };
 
 extern struct msm_vidc_drv *vidc_driver;
