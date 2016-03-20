@@ -851,6 +851,9 @@ config STATE_NOTIFIER
 	bool "State Notifier"
 	default y
 
+config STATE_NOTIFIER
+        bool "State Notifier"
+
 source "drivers/soc/qcom/memshare/Kconfig"
 
 endif # ARCH_MSM
