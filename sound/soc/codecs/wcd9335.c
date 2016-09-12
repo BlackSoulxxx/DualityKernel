@@ -10928,8 +10928,12 @@ static void tasha_shutdown(struct snd_pcm_substream *substream,
 
 	pr_debug("%s(): substream = %s  stream = %d\n" , __func__,
 		 substream->name, substream->stream);
+
+	if (tasha->intf_type == WCD9XXX_INTERFACE_TYPE_I2C)
+		return;
+
 	if ((substream->stream == SNDRV_PCM_STREAM_PLAYBACK) &&
-		test_bit(SB_CLK_GEAR, &tasha->status_mask)) {
+	    test_bit(SB_CLK_GEAR, &tasha->status_mask)) {
 		tasha_codec_vote_max_bw(dai->codec, false);
 		clear_bit(SB_CLK_GEAR, &tasha->status_mask);
 	}
