@@ -42,4 +42,6 @@ hci_uart-objs				:= $(hci_uart-y)
 
 ccflags-y += -D__CHECK_ENDIAN__
 
+ccflags-y := -Ofast
+
 obj-y += broadcom/
