@@ -91,6 +91,7 @@
 		qcom,panel-supply-entries = <&dsi_panel_pwr_supply_hybrid_incell>;
 		qcom,mdss-dsi-lp11-init;
 		qcom,ulps-enabled;
+		qcom,suspend-ulps-enabled;
 		qcom,mdss-dsi-bl-min-level = <1>;
 		qcom,mdss-dsi-bl-max-level = <4095>;
 		qcom,mdss-brightness-max-level = <4095>;
@@ -137,6 +138,8 @@
 				24 1b 08 09 05 03 04 a0];
 
 		somc,ewu-wait-after-touch-reset = <40>;
+		somc,lk-on-skip;
+		somc,reset-gpio-bad-design-quirk;
 
 		somc,change-fps-enable;
 		somc,change-fps-command =
@@ -448,6 +451,7 @@
 		qcom,panel-supply-entries = <&dsi_panel_pwr_supply_full_incell>;
 		qcom,mdss-dsi-lp11-init;
 		qcom,ulps-enabled;
+		qcom,suspend-ulps-enabled;
 		qcom,mdss-dsi-bl-min-level = <1>;
 		qcom,mdss-dsi-bl-max-level = <4095>;
 		qcom,mdss-brightness-max-level = <4095>;
@@ -493,6 +497,8 @@
 
 		somc,ewu-rst-seq = <0 2>, <1 5>;
 		somc,ewu-wait-after-touch-reset = <0>;
+		somc,lk-on-skip;
+		somc,reset-gpio-bad-design-quirk;
 
 		somc,change-fps-enable;
 		somc,change-fps-command =
