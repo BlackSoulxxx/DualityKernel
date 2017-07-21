@@ -642,7 +642,6 @@ struct rq {
 #endif
 	int skip_clock_update;
 
-#ifdef CONFIG_CPU_QUIET
 	/* time-based average load */
  	u64 nr_last_stamp;
  	unsigned int ave_nr_running;
