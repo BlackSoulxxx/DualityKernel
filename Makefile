@@ -376,7 +376,7 @@ CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 CFLAGS_MODULE	= $(GRAPHITE)
 AFLAGS_MODULE   = $(GRAPHITE)
 LDFLAGS_MODULE  = --strip-debug
-CFLAGS_KERNEL	= $(GRAPHITE) -mcpu=cortex-a57+crc+crypto -mtune=cortex-a57+crc+crypto
+CFLAGS_KERNEL	= $(GRAPHITE) -mcpu=cortex-a57.cortex-a53+crc+crypto -mtune=cortex-a57.cortex-a53
 AFLAGS_KERNEL	= $(GRAPHITE)
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage -fno-tree-loop-im
 CFLAGS_KCOV	= -fsanitize-coverage=trace-pc
@@ -402,7 +402,7 @@ KBUILD_CPPFLAGS := -D__KERNEL__
 
 KBUILD_CFLAGS   := $(GRAPHITE) -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common \
 		   -Wno-implicit-function-declaration -Wno-format-security \
-		   -mcpu=cortex-a57+crc+crypto -mtune=cortex-a57+crc+crypto -std=gnu89 \
+		   -mcpu=cortex-a57.cortex-a53+crc+crypto -mtune=cortex-a57.cortex-a53 -std=gnu89 \
 		   -Wno-memset-transposed-args -Wno-bool-compare -Wno-logical-not-parentheses -Wno-parentheses \
 		   -Wno-bool-operation -Wno-int-in-bool-context -Wno-switch-unreachable \
 		   -Wno-unused-const-variable -Wno-array-bounds -Wno-incompatible-pointer-types \
