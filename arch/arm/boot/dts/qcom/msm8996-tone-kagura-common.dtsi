@@ -54,7 +54,7 @@
 			pinctrl-0 = <&msm_gpio_85>;
 			pinctrl-1 = <&msm_gpio_85_suspend>;
 			sony,tof-sensor-name = "VL53L0";
-			sony,tof-need-cam-on = <0>;
+			sony,tof-need-cam-on = <1>;
 			sony,tof-sensor-facing = <0>;
 		};
 	};
