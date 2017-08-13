@@ -2454,7 +2454,7 @@
 			 <&clock_gcc clk_qcrypto_ce1_clk>,
 			 <&clock_gcc clk_gcc_ce1_ahb_m_clk>,
 			 <&clock_gcc clk_gcc_ce1_axi_m_clk>;
-		qcom,ce-opp-freq = <171430000>;
+		qcom,ce-opp-freq = <211430000>;
 		qcom,use-sw-aes-cbc-ecb-ctr-algo;
 		qcom,use-sw-aes-xts-algo;
 		qcom,use-sw-aes-ccm-algo;
@@ -2486,7 +2486,7 @@
 			 <&clock_gcc clk_qcedev_ce1_clk>,
 			 <&clock_gcc clk_gcc_ce1_ahb_m_clk>,
 			 <&clock_gcc clk_gcc_ce1_axi_m_clk>;
-		qcom,ce-opp-freq = <171430000>;
+		qcom,ce-opp-freq = <211430000>;
 	};
 
 	qcom_seecom: qseecom@86600000 {
@@ -2500,6 +2500,7 @@
 		qcom,support-fde;
 		qcom,no-clock-support;
 		qcom,appsbl-qseecom-support;
+		qcom,fde-key-size;
 		qcom,msm-bus,name = "qseecom-noc";
 		qcom,msm-bus,num-cases = <4>;
 		qcom,msm-bus,num-paths = <1>;
@@ -2514,7 +2515,7 @@
 			 <&clock_gcc clk_qseecom_ce1_clk>,
 			 <&clock_gcc clk_gcc_ce1_ahb_m_clk>,
 			 <&clock_gcc clk_gcc_ce1_axi_m_clk>;
-		qcom,ce-opp-freq = <171430000>;
+		qcom,ce-opp-freq = <211430000>;
 		qcom,qsee-reentrancy-support = <2>;
 	};
 
@@ -3742,7 +3743,7 @@
 			<&clock_gcc clk_qseecom_ce1_clk>,
 			<&clock_gcc clk_gcc_ce1_ahb_m_clk>,
 			<&clock_gcc clk_gcc_ce1_axi_m_clk>;
-			qcom,ce-opp-freq = <171430000>;
+			qcom,ce-opp-freq = <211430000>;
 	};
 
 	dcc: dcc@4b3000 {
