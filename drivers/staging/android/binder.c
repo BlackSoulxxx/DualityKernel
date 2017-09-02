@@ -2792,7 +2792,9 @@ retry:
 
 	if (ret)
 		return ret;
+
 	thread->looper &= ~BINDER_LOOPER_STATE_WAITING;
+
 	while (1) {
 		uint32_t cmd;
 		struct binder_transaction_data tr;
