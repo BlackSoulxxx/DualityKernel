@@ -1536,7 +1536,7 @@
 	qcom,vbat-estimate-diff-mv = <200>;
 	qcom,cl-vbat-est-thr-uv = <300000>;
 	qcom,fg-cc-cv-threshold-mv = <4290>;
-	/delete-property/ qcom,capacity-learning-feedback;
+	qcom,capacity-learning-feedback;
 	somc,resume-soc-raw-full-normal = <0xF3>;
 	somc,resume-soc-raw-full-aging = <0xE3>;
 	somc,resume-soc-raw-not-full-normal = <0xFD>;
